@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a{
+    font-family: 'Spartan', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+.header{
+    background: #e7e6e6;
+    
+   }
+   .header-width {
+       display: flex;
+       width: 82%;
+       margin: 0 auto;
+       margin-bottom: -7px;
+       justify-content: space-between;
+   }
+   
+   
+   .header .header-logo{
+       
+   }
+   .header .header-logo img {
+    width: 100px;
+    margin-top: 15px;
+}
+   .header-menu{
+       margin-bottom: 8px;
+   }
+   .header-menu ul{
+      display: flex;
+       list-style: none;
+       margin: 0;
+       margin-left: 130px;
+   }
+   .header-menu ul li{
+       margin-left: 20px;
+       position: relative;
+       transition: .5s;
+       margin-bottom: -7;
+     
+   }
+   .header-menu ul li a {
+    text-decoration: none;
+    color: rgb(88, 87, 87);
+    display: inline-block;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 57px;
+    margin-top: 5px;
+}
+   .header-menu ul li ul {
+    position: absolute;
+    padding: 10px 0;
+    width: 200px;
+    background: rgb(255, 255, 255);
+    padding: 20px 0;
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    margin-left: 0;
+
+}
+.header-menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    z-index: 3;
+}
+
+.header-menu ul li ul li {
+    background: blue;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.header-menu ul li ul li a {
+    color: white;
+    padding: 0px 15px;
+}
+
+
+   .bb{
+       position: relative;
+   }
+   .bb::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #9d8fec;
+    position: absolute;
+    top: 77px;
+    left: 6px;
+    transition: .5s;
+}
+.cc{
+    color: rgb(25, 25, 199) !important;
+   border-bottom: 3px solid #9d8fec;
+}
+.header-menu ul li a:hover::after{
+    width: 90%;
+}
+.h-btn{
+ 
+}
+   .header-btn {
+       display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 11px 21px !important;
+    color: #3763eb !important;
+    background: white;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.header-btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    
+    border-radius:50px;
+    z-index: -1;
+    transition: .5s;
+    
+    background: rgb(119, 105, 248) !important;
+}
+.header-btn:hover::after{
+    width: 100%;
+    
+}
+.header-btn:hover{
+    color: white !important;
+
+    
+} 
+
+
+
+/* banner */
+.dot-img img {
+    position: absolute;
+    top: 1100px;
+    left: 61px;
+}
+.banner-section{
+    background: #edf6ff;
+    position: relative;
+}
+   
+.ml {
+    margin-left: 18%;
+    margin-top: 160px;
+}
+.ml h1 {
+    font-weight: 600;
+}
+.ml p{}
+.ml a {
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 25px;
+}
+.ml a:hover{
+    background: white;
+    color: blue;
+}
+.banner-section img {
+    border-radius: 50% 0% 50% 50%;
+    height: 660px;
+    width: 100%;
+    margin-top: -16%;
+    margin-right: -13%;
+}
+.right{
+    text-align: end;
+    overflow: hidden;
+}
+
+/* service */
+
+.service-section{}
+.service-section h6 {
+    font-size: 15px;
+    color: #9d8fec;
+}
+.service-section h1 {
+    font-weight: 600;
+    width: 60%;
+    position: relative;
+}
+.service-section h1::after {
+    content: "";
+    height: 3px;
+    width: 50px;
+    background: #9d8fec;
+    position: absolute;
+    top: 102px;
+    left: 15px;
+}
+
+.service-section p{}
+.card-area{
+    display: flex;
+    justify-content: space-between;
+}
+.card-area .card{
+    width: 16rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+    padding: 25px;
+    background: #f9fcff;
+    transition: .4s;
+}
+.card-area .card:hover{
+    background: rgb(62, 65, 238);
+    transform:scale(1.03);
+    color: white;
+}
+.card-area .card:hover i{
+    background: rgb(255, 255, 255);
+    
+    color: rgb(79, 123, 243);
+}
+.card-area .card:hover h5::after {
+    background: rgb(255, 255, 255);
+    width: 50px;
+    
+    
+}
+.card-area .card:hover p {
+    color: white;  
+}
+.card h5 {
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+   
+}
+.card h5::after {
+    content: "";
+    height: 3px;
+    width: 30px;
+    background: #9d8fec;
+    position: absolute;
+    top: 135px;
+    left: 1px;
+    transition: .5s;
+}
+.card span i {
+    color: white;
+    background: #5252f0;
+    padding: 19px;
+    border-radius: 50% 50% 50% 0;
+    margin-top: 10px;
+    transition: .4s;
+    font-size: 25px;
+}
+.card p{
+    color: rgb(146, 143, 143);
+}
+
+
+/* slider-section */
+.slider-section{
+    background-image: url(https://i.ibb.co/mcK2gKT/video-bg.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px;
+    position: relative;
+    z-index: 1;
+    
+}
+.slider-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(13, 23, 46, 0.9);
+    z-index: -2;
+}
+.slider-section h1{
+    position: relative;
+}
+.slider-section h1::after {
+    content: "";
+    height: 3px;
+    width: 61px;
+    background: #9d8fec;
+    position: absolute;
+    top: 67px;
+    left: 459px;
+}
+.slider-section span i {
+    color: blue;
+    background: white;
+    margin-top: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    border: 1px solid transparent;
+    z-index: 1;
+    transition: .5s;
+}
+.icon i {
+    position: absolute;
+   
+    bottom: 46px;
+   
+    right: 65px;
+    padding: 17px 20px;
+    background: #4d4dee;
+    border-radius: 50%;
+    transition: .5s;
+}
+.icon i:hover{
+    color: #4d4dee;
+    background: white;
+}
+
+.slider-section span i:hover{
+    color: white;
+    background: blue;
+    
+    transition: .4s;
+}
+.slider-section span {
+    position: relative;
+}
+.slider-section span::after {
+    content: "";
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    top: 45px;
+    left: 420px;
+    z-index: -1;
+    animation:shagor 2s ease-out infinite ;
+}
+.slider-section span::before {
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    top: 40px;
+    left: 415px;
+    z-index: -1;
+    animation:shagor2 2s ease-out infinite ;
+    animation-timing-function: ;
+}
+
+@keyframes shagor{
+    0%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    
+    100%{
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
+@keyframes shagor2{
+    0%{
+        transform: scale(0);
+        opacity: 1;
+    }
+  
+   
+    100%{
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
